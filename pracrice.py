@@ -1,11 +1,9 @@
-add= 0
+def add_many(*avg):
+    result =0
+    for i in avg:
+        result = result + i
+        
+    return result
 
-for i in range(1,11):
-    add = add +i
-
-
-print(add)
-
-# 추가했다 이부분
-# 이부분도 추가했다
-    
+a = add_many(1,2,3,4,5,6,7,8,9,10)
+print(a)
