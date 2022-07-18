@@ -1,9 +1,16 @@
-def add_many(*avg):
-    result =0
-    for i in avg:
-        result = result + i
+def add_mul(choice,*avg):
+
+    if choice == "add":
+        result = 0
+        for i in avg:
+            result = result + i
         
+    elif choice=="mul":
+        result = 1
+        for i in avg:
+            result = i * result
     return result
 
-a = add_many(1,2,3,4,5,6,7,8,9,10)
+a = add_mul("mul",1,2,3,4,5)
+
 print(a)
